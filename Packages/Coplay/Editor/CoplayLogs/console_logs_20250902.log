@@ -1,0 +1,34 @@
+2025-09-02 15:28:54.803 +02:00 [INF] Initializing Coplay services
+2025-09-02 15:28:54.814 +02:00 [INF] Initializing EditorThreadHelper
+2025-09-02 15:28:54.815 +02:00 [INF] EditorThreadHelper initialized successfully
+2025-09-02 15:29:04.062 +02:00 [INF] No existing action records JSON file found.
+2025-09-02 15:29:59.759 +02:00 [INF] No state file found, maintaining Initialized state for fresh installation
+2025-09-02 15:29:59.776 +02:00 [INF] No MCP servers configuration found
+2025-09-02 15:29:59.776 +02:00 [INF] MCP host initialized
+2025-09-02 15:29:59.785 +02:00 [INF] Context file not found: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\CoplayLogs\context_items.json
+2025-09-02 15:29:59.786 +02:00 [INF] Checking for dependencies in: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\Binaries
+2025-09-02 15:29:59.786 +02:00 [INF] Ripgrep directory not found
+2025-09-02 15:29:59.808 +02:00 [WRN] Autocomplete is disabled in settings. Enable it in Coplay settings to use this feature.
+2025-09-02 15:29:59.825 +02:00 [INF] Checking for dependencies in: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\Binaries
+2025-09-02 15:29:59.825 +02:00 [INF] Ripgrep directory not found
+2025-09-02 15:29:59.827 +02:00 [INF] Showing dependency download screen
+2025-09-02 15:30:02.361 +02:00 [INF] Creating Binaries directory at: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\Binaries
+2025-09-02 15:30:35.651 +02:00 [INF] Checking for executable in: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\Binaries\ripgrep\x86_64
+2025-09-02 15:30:35.651 +02:00 [INF] Looking for executable at: C:\Users\ahunt\Documents\Unity\Test mcp 3\Packages\Coplay\Editor\Binaries\ripgrep\x86_64\rg.exe
+2025-09-02 15:30:35.651 +02:00 [INF] Set executable permissions successfully
+2025-09-02 15:33:24.557 +02:00 [INF] Dependency installation completed successfully
+2025-09-02 15:33:26.046 +02:00 [INF] Successfully got device ID: cpl-device-479ae5a4-18bd-43ca-845b-a1ae8ad253fe
+2025-09-02 15:33:39.143 +02:00 [INF] Placeholder text would be: What can I help with?
+2025-09-02 15:33:39.147 +02:00 [INF] Loading threads
+2025-09-02 15:33:39.149 +02:00 [INF] Successfully logged in
+2025-09-02 15:33:41.208 +02:00 [INF] Creating thread
+2025-09-02 15:33:41.813 +02:00 [INF] Loading thread messages for thread cpl_thread_2ce8746c_d042_4350_a953_f8e2eec2152d
+2025-09-02 15:33:41.814 +02:00 [INF] Saving state
+2025-09-02 15:33:41.931 +02:00 [INF] 1 OnThreadChanged
+2025-09-02 15:33:41.932 +02:00 [INF] Handling state change: Initialized
+2025-09-02 15:34:22.340 +02:00 [INF] Clearing All
+2025-09-02 15:34:22.340 +02:00 [INF] Clearing state model
+2025-09-02 15:34:22.340 +02:00 [WRN] You are setting to the same state: Initialized
+2025-09-02 15:34:22.346 +02:00 [INF] Cleaned up all thumbnail textures
+2025-09-02 15:34:22.348 +02:00 [INF] AssistantController: Dispose called
+2025-09-02 15:34:22.348 +02:00 [INF] FunctionExecutionController: Dispose called

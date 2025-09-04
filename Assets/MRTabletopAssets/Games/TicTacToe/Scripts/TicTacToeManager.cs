@@ -17,6 +17,8 @@ namespace MRTTT.TicTacToe
 
         public TicTacToePiece.PieceType CurrentPlayer => m_CurrentPlayer;
 
+        public event Action BoardReset;
+        public event Action<int, int, TicTacToePiece.PieceType> PiecePlaced;
         public event Action<TicTacToePiece.PieceType> TurnChanged;
         public event Action<TicTacToePiece.PieceType> GameOver;
 
@@ -34,6 +36,7 @@ namespace MRTTT.TicTacToe
 
             m_CurrentPlayer = TicTacToePiece.PieceType.X;
             TurnChanged?.Invoke(m_CurrentPlayer);
+            BoardReset?.Invoke();
         }
 
         public bool TryPlace(int x, int y)
@@ -50,6 +53,8 @@ namespace MRTTT.TicTacToe
                 piece.SetType(m_CurrentPlayer);
                 piece.transform.localPosition = new Vector3(x, 0, y);
             }
+
+            PiecePlaced?.Invoke(x, y, m_CurrentPlayer);
 
             var winner = CheckWinner();
             if (winner != TicTacToePiece.PieceType.None)

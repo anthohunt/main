@@ -1,24 +1,23 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace MRTTT.TicTacToe
 {
     public class TicTacToeInputController : MonoBehaviour
     {
-        [SerializeField] Camera m_Camera;
-        [SerializeField] LayerMask m_BoardMask;
+        [SerializeField] XRRayInteractor m_Interactor;
+        [SerializeField] InputActionProperty m_Select;
         [SerializeField] TicTacToeManager m_Manager;
 
         void Update()
         {
-            if (Mouse.current == null)
+            if (m_Interactor == null || m_Select.action == null)
                 return;
 
-            if (Mouse.current.leftButton.wasPressedThisFrame)
+            if (m_Select.action.WasPerformedThisFrame())
             {
-                Vector2 screenPos = Mouse.current.position.ReadValue();
-                Ray ray = m_Camera.ScreenPointToRay(screenPos);
-                if (Physics.Raycast(ray, out RaycastHit hit, 100f, m_BoardMask))
+                if (m_Interactor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
                 {
                     var cell = hit.collider.GetComponent<TicTacToeBoardCell>();
                     if (cell != null)
